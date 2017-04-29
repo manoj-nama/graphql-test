@@ -1,6 +1,9 @@
 const express = require('express');
-const expressQL = require('express-graphql');
+const exGraphQL = require('express-graphql');
 const { buildSchema } = require('graphql');
+const mongoose = require('mongoose');
+
+const config = require('./config');
 
 const schema = buildSchema(`
   type Query {
@@ -14,7 +17,9 @@ const rootValue = {
 
 const app = express();
 
-app.use('/', expressQL({
+mongoose.connect(config.mongo_uri);
+
+app.use('/', exGraphQL({
   schema,
   rootValue,
   graphiql: true
