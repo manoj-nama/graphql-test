@@ -11,7 +11,8 @@ const DriverSchema = new Schema({
   highest_finish: String,
   highest_grid: Number,
   dob: String,
-  birth_place: String
+  birth_place: String,
+  picture: String
 });
 
 DriverSchema.index({badge: 1});

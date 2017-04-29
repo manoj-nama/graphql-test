@@ -13,6 +13,7 @@ const TeamSchema = new Schema({
   poles: Number,
   fastest_laps: Number,
   team_chief: String,
+  picture: String,
   technical_chief: String
 });
 
