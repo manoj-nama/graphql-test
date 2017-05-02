@@ -12,7 +12,7 @@ const schema = buildSchema(`
   }
 `);
 
-const rootValue = {
+const resolvers = {
   hello: () => 'Hello World!'
 }
 
@@ -22,7 +22,7 @@ mongoose.connect(config.mongo_uri);
 
 app.use('/graphql', exGraphQL({
   schema,
-  rootValue,
+  resolvers,
   graphiql: true
 }));
 

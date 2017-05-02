@@ -5,6 +5,7 @@ const DriverSchema = new Schema({
   name: String,
   badge: Number,
   country: String,
+  podiums: Number,
   points: Number,
   races: Number,
   championships: Number,
