@@ -7,14 +7,14 @@ const list = (params, callback) => {
     .exec(callback);
 };
 
-const getDrivers = (params, callback) => {
+const getDriver = (params, callback) => {
   Drivers
-    .find(params)
+    .findOne(params)
     .lean()
     .exec(callback);
 }
 
 module.exports = {
   list,
-  getDrivers
+  getDriver
 }

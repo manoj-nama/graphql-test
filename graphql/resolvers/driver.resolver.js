@@ -308,10 +308,16 @@ const list = (args, req, next, y) => {
   });
 }
 
-const fetch = (args) => new Promise((resolve, reject) => {
-  const url = args.team_friendly_url || args.friendly_url;
+const fetch = (args, params) => new Promise((resolve, reject) => {
+  let query = {}
+  if(args) {
+    query['team_friendly_url'] = args.team_friendly_url
+  }
+  if(params) {
+    query['badge'] = params.badge;
+  }
   DriverService
-    .getDrivers({team_friendly_url: url}, (err, data) => {
+    .getDriver(query, (err, data) => {
       if(err) {
         return reject(err);
       }

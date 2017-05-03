@@ -11,8 +11,8 @@ const list = (args, req, next, y) => {
   });
 }
 
-const fetch = (args) => new Promise((resolve, reject) => {
-  const url = args.team_friendly_url || args.friendly_url;
+const fetch = (args, params) => new Promise((resolve, reject) => {
+  const url = (args && args.team_friendly_url) || (params && params.friendly_url);
   TeamService
     .getTeam({friendly_url: url}, (err, data) => {
       if(err) {

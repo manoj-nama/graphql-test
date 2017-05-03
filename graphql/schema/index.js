@@ -8,7 +8,7 @@ const rootSchema = `
 
   type Query {
     teams: [Team]
-    team(_id: String): Team 
+    team(friendly_url: String): Team 
     drivers: [Driver]
     driver(badge: Int): Driver
   }
