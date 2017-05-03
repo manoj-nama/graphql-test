@@ -13,10 +13,14 @@ const DriverSchema = new Schema({
   highest_grid: Number,
   dob: String,
   birth_place: String,
-  picture: String
+  picture: String,
+  team: {
+    type: Schema.Types.ObjectId,
+    ref: 'Team'
+  }
 });
 
-DriverSchema.index({badge: 1});
+DriverSchema.index({ badge: 1 });
 
 const DriverModel = mongoose.model('Driver', DriverSchema);
 module.exports = DriverModel;

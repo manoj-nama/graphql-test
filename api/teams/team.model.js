@@ -14,7 +14,10 @@ const TeamSchema = new Schema({
   fastest_laps: Number,
   team_chief: String,
   picture: String,
-  technical_chief: String
+  technical_chief: String,
+  drivers: [
+    { type: Schema.Types.ObjectId, ref: 'Driver' }
+  ]
 });
 
 const TeamModel = mongoose.model('Team', TeamSchema);
