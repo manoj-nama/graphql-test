@@ -14,15 +14,11 @@ const DriverSchema = new Schema({
   dob: String,
   birth_place: String,
   picture: String,
-  team: {
-    name: String,
-    friendly_url: String,
-    id: { type: Schema.Types.ObjectId, ref: 'Team' }
-  }
+  team_friendly_url: String
 });
 
 DriverSchema.index({ badge: 1 }, { unique: true });
-DriverSchema.index({ 'team.friendly_url': 1 });
+DriverSchema.index({ team_friendly_url: 1 });
 
 const DriverModel = mongoose.model('Driver', DriverSchema);
 module.exports = DriverModel;

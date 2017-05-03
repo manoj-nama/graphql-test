@@ -15,10 +15,7 @@ const TeamSchema = new Schema({
   fastest_laps: Number,
   team_chief: String,
   picture: String,
-  technical_chief: String,
-  drivers: [
-    { type: Schema.Types.ObjectId, ref: 'Driver' }
-  ]
+  technical_chief: String
 });
 
 TeamSchema.index({ friendly_url: 1 }, { unique: true });
