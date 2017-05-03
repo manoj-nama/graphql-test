@@ -2,6 +2,7 @@ const mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 const TeamSchema = new Schema({
+  friendly_url: { type: String, unique: true },
   name: String,
   base: String,
   chassis: String,
@@ -19,6 +20,8 @@ const TeamSchema = new Schema({
     { type: Schema.Types.ObjectId, ref: 'Driver' }
   ]
 });
+
+TeamSchema.index({ friendly_url: 1 }, { unique: true });
 
 const TeamModel = mongoose.model('Team', TeamSchema);
 module.exports = TeamModel;
