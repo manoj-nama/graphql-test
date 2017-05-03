@@ -1,5 +1,6 @@
 const teams = [
   {
+    friendly_url: 'ferrari',
     name: 'Scuderia Ferrari',
     base: 'Maranello, Italy',
     chassis: 'SF70H',
@@ -15,10 +16,11 @@ const teams = [
     technical_chief: 'Mattia Binotto'
   },
   {
+    friendly_url: 'mercedes',
     name: 'Mercedes AMG Petronas F1 ',
     base: 'Brackley, United Kingdom',
     chassis: 'F1 W08 EQ Power+',
-    engine: '	Mercedes',
+    engine: 'Mercedes',
     first_entry: '1970',
     championships: 3,
     highest_finish: '1 (x56)',
@@ -30,6 +32,7 @@ const teams = [
     technical_chief: 'James Allison'
   },
   {
+    friendly_url: 'redbull',
     name: 'Red Bull Racing',
     base: 'Milton Keynes, United Kingdom',
     chassis: 'RB13',
@@ -45,6 +48,7 @@ const teams = [
     technical_chief: 'Adrian Newey'
   },
   {
+    friendly_url: 'forceindia',
     name: 'Sahara Force India F1 Team',
     base: 'Silverstone, United Kingdom',
     chassis: 'VJM10',
@@ -60,6 +64,7 @@ const teams = [
     technical_chief: 'Andrew Green'
   },
   {
+    friendly_url: 'williams',
     name: 'Williams Martini Racing',
     base: 'Grove, United Kingdom',
     chassis: 'FW40',
@@ -75,6 +80,7 @@ const teams = [
     technical_chief: 'Paddy Lowe'
   },
   {
+    friendly_url: 'tororosso',
     name: 'Scuderia Toro Rosso',
     base: 'Faenza, Italy',
     chassis: 'STR12',
@@ -90,6 +96,7 @@ const teams = [
     technical_chief: 'James Key'
   },
   {
+    friendly_url: 'haas',
     name: 'Haas F1 Team',
     base: 'Kannapolis, United States',
     chassis: 'VF-17',
@@ -105,6 +112,7 @@ const teams = [
     technical_chief: 'Rob Taylor'
   },
   {
+    friendly_url: 'renault',
     name: 'Renault Sport F1 Team',
     base: 'Enstone, United Kingdom',
     chassis: 'R.S.17',
@@ -120,6 +128,7 @@ const teams = [
     technical_chief: 'Bob Bell'
   },
   {
+    friendly_url: 'sauber',
     name: 'Sauber F1 Team',
     base: 'Hinwil, Switzerland',
     chassis: 'C36',
@@ -135,6 +144,7 @@ const teams = [
     technical_chief: 'Jorg Zander'
   },
   {
+    friendly_url: 'mclaren',
     name: 'McLaren Honda',
     base: 'Woking, United Kingdom',
     chassis: 'MCL32',
@@ -150,3 +160,5 @@ const teams = [
     technical_chief: 'Tim Goss'
   }
 ]
+
+export default teams;

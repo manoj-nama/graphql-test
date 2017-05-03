@@ -11,7 +11,8 @@ const drivers = [
     highest_grid: 1,
     dob: '07/01/1985',
     birth_place: 'Stevenage, England',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'mercedes'
   },
   {
     name: 'Sebastian Vettel',
@@ -25,7 +26,8 @@ const drivers = [
     highest_grid: 1,
     dob: '03/07/1987',
     birth_place: 'Heppenheim, Germany',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'ferrari'
   },
   {
     name: 'Valtteri Bottas',
@@ -39,7 +41,8 @@ const drivers = [
     highest_grid: 1,
     dob: '28/08/1989',
     birth_place: 'Nastola, Finland',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'mercedes'
   },
   {
     name: 'Kimi Räikkönen',
@@ -53,7 +56,8 @@ const drivers = [
     highest_grid: 1,
     dob: '17/10/1979',
     birth_place: 'Espoo, Finland',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'ferrari'
   },
   {
     name: 'Max Verstappen',
@@ -67,7 +71,8 @@ const drivers = [
     highest_grid: 2,
     dob: '30/09/1997',
     birth_place: 'Hasselt, Belgium',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'redbull'
   },
   {
     name: 'Daniel Ricciardo',
@@ -81,7 +86,8 @@ const drivers = [
     highest_grid: 1,
     dob: '01/07/1989',
     birth_place: 'Perth, Australia',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'redbull'
   },
   {
     name: 'Sergio Perez',
@@ -95,7 +101,8 @@ const drivers = [
     highest_grid: 4,
     dob: '26/01/1990',
     birth_place: 'Guadalajara, Mexico',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'forceindia'
   },
   {
     name: 'Felipe Massa',
@@ -109,7 +116,8 @@ const drivers = [
     highest_grid: 1,
     dob: '25/04/1981',
     birth_place: 'Sao Paulo, Brazil',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'williams'
   },
   {
     name: 'Carlos Sainz',
@@ -123,7 +131,8 @@ const drivers = [
     highest_grid: 5,
     dob: '01/09/1994',
     birth_place: 'Madrid, Spain',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'tororosso'
   },
   {
     name: 'Esteban Ocon',
@@ -137,7 +146,8 @@ const drivers = [
     highest_grid: 10,
     dob: '17/09/1996',
     birth_place: 'Évreux, Normandy',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'forceindia'
   },
   {
     name: 'Nico Hulkenberg',
@@ -151,7 +161,8 @@ const drivers = [
     highest_grid: 1,
     dob: '19/08/1987',
     birth_place: 'Emmerich am Rhein, Germany',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'renault'
   },
   {
     name: 'Romain Grosjean',
@@ -165,7 +176,8 @@ const drivers = [
     highest_grid: 2,
     dob: '17/04/1986',
     birth_place: 'Geneva, Switzerland',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'haas'
   },
   {
     name: 'Kevin Magnussen',
@@ -179,7 +191,8 @@ const drivers = [
     highest_grid: 4,
     dob: '05/10/1992',
     birth_place: 'Roskilde, Denmark',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'haas'
   },
   {
     name: 'Daniil Kvyat',
@@ -193,7 +206,8 @@ const drivers = [
     highest_grid: 4,
     dob: '26/04/1994',
     birth_place: 'Ufa, Russia',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'tororosso'
   },
   {
     name: 'Pascal Wehrlein',
@@ -207,7 +221,8 @@ const drivers = [
     highest_grid: 12,
     dob: '18/10/1994',
     birth_place: 'Sigmaringen, Germany',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'sauber'
   },
   {
     name: 'Lance Stroll',
@@ -221,21 +236,8 @@ const drivers = [
     highest_grid: 10,
     dob: '29/10/1998',
     birth_place: 'Montreal, Canada',
-    picture: ''
-  },
-  {
-    name: 'Antonio Giovinazzi',
-    badge: 36,
-    country: 'Italy',
-    podiums: 0,
-    points: 0,
-    races: 2,
-    championships: 0,
-    highest_finish: '12 (x1)',
-    highest_grid: 16,
-    dob: '14/12/1993',
-    birth_place: 'Martina Franca, Italy',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'williams'
   },
   {
     name: 'Jolyon Palmer',
@@ -249,7 +251,8 @@ const drivers = [
     highest_grid: 10,
     dob: '20/01/1991',
     birth_place: 'Horsham, England',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'renault'
   },
   {
     name: 'Stoffel Vandoorne',
@@ -263,7 +266,8 @@ const drivers = [
     highest_grid: 12,
     dob: '26/03/1992',
     birth_place: 'Kortrijk, Belgium',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'mclaren'
   },
   {
     name: 'Fernando Alonso',
@@ -277,7 +281,8 @@ const drivers = [
     highest_grid: 1,
     dob: '29/07/1981',
     birth_place: 'Oviedo, Spain',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'mclaren'
   },
   {
     name: 'Marcus Ericsson',
@@ -291,6 +296,9 @@ const drivers = [
     highest_grid: 9,
     dob: '02/09/1990',
     birth_place: 'Kumla, Sweden',
-    picture: ''
+    picture: '',
+    team_friendly_url: 'sauber'
   }
 ]
+
+export default drivers;
