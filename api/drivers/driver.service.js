@@ -1,5 +1,4 @@
 const Drivers = require('./driver.model');
-const Team = require('../teams/team.model');
 
 const list = (params, callback) => {
   Drivers
@@ -8,14 +7,14 @@ const list = (params, callback) => {
     .exec(callback);
 };
 
-const getTeam = (params, callback) => {
-  Team
-    .findOne(params)
+const getDrivers = (params, callback) => {
+  Drivers
+    .find(params)
     .lean()
     .exec(callback);
 }
 
 module.exports = {
   list,
-  getTeam
+  getDrivers
 }

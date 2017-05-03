@@ -297,18 +297,27 @@ const drivers = [
   }
 ]
 
-const list = () => {
+const list = (args, req, next, y) => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(drivers);
-    }, 100);
+    DriverService.list({}, (err, data) => {
+      if(err) {
+        return reject(err);
+      }
+      return resolve(data);
+    });
   });
 }
 
-const fetch = (args) => {
-  console.log(args);
-  return [{name: 'Lewis'}];
-}
+const fetch = (args) => new Promise((resolve, reject) => {
+  const url = args.team_friendly_url || args.friendly_url;
+  DriverService
+    .getDrivers({team_friendly_url: url}, (err, data) => {
+      if(err) {
+        return reject(err);
+      }
+      return resolve(data);
+    });
+});
 
 module.exports = {
   list,
