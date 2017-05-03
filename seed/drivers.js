@@ -1,4 +1,4 @@
-const drivers = [
+export const drivers = [
   {
     name: 'Lewis Hamilton',
     badge: 44,
@@ -299,6 +299,4 @@ const drivers = [
     picture: '',
     team_friendly_url: 'sauber'
   }
-]
-
-export default drivers;
+];

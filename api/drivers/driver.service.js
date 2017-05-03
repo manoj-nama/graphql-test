@@ -1,4 +1,5 @@
 const Drivers = require('./driver.model');
+const Team = require('../teams/team.model');
 
 const list = (params, callback) => {
   Drivers
@@ -8,7 +9,7 @@ const list = (params, callback) => {
 };
 
 const getTeam = (params, callback) => {
-  Drivers
+  Team
     .findOne(params)
     .lean()
     .exec(callback);

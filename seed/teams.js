@@ -1,4 +1,4 @@
-const teams = [
+export const teams = [
   {
     friendly_url: 'ferrari',
     name: 'Scuderia Ferrari',
@@ -159,6 +159,4 @@ const teams = [
     picture: '',
     technical_chief: 'Tim Goss'
   }
-]
-
-export default teams;
+];
