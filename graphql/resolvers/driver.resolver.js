@@ -297,9 +297,13 @@ const drivers = [
   }
 ]
 
-const list = (args, req, next, y) => {
+const list = ({friendly_url}) => {
   return new Promise((resolve, reject) => {
-    DriverService.list({}, (err, data) => {
+    const opts = {}
+    if(friendly_url) {
+      opts.team_friendly_url = friendly_url;
+    }
+    DriverService.list(opts, (err, data) => {
       if(err) {
         return reject(err);
       }
@@ -308,11 +312,8 @@ const list = (args, req, next, y) => {
   });
 }
 
-const fetch = (args, params) => new Promise((resolve, reject) => {
+const fetch = (root, params) => new Promise((resolve, reject) => {
   let query = {}
-  if(args) {
-    query['team_friendly_url'] = args.team_friendly_url
-  }
   if(params) {
     query['badge'] = params.badge;
   }
