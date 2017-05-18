@@ -1,8 +1,8 @@
 const TeamService = require('../../api/teams/team.service');
 
-const list = (args, req, next, y) => {
+const list = (args = {}, params = {}) => {
   return new Promise((resolve, reject) => {
-    TeamService.list({}, (err, data) => {
+    TeamService.list(args, params, (err, data) => {
       if (err) {
         return reject(err);
       }

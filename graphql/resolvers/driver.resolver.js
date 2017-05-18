@@ -297,13 +297,13 @@ const drivers = [
   }
 ]
 
-const list = ({friendly_url} = {}) => {
+const list = ({friendly_url} = {}, params) => {
   return new Promise((resolve, reject) => {
     const opts = {};
     if (friendly_url) {
       opts.team_friendly_url = friendly_url;
     }
-    DriverService.list(opts, (err, data) => {
+    DriverService.list(opts, params, (err, data) => {
       if (err) {
         return reject(err);
       }

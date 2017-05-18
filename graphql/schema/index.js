@@ -7,9 +7,9 @@ const rootSchema = `
   ${teamSchema}
 
   type Query {
-    teams: [Team]
+    teams(limit: Int, skip: Int): [Team]
     team(friendly_url: String): Team 
-    drivers: [Driver]
+    drivers(limit: Int, skip: Int): [Driver]
     driver(badge: Int): Driver
   }
 `;
