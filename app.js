@@ -2,7 +2,7 @@ const express = require('express');
 const { buildSchema } = require('graphql');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const { makeExecutableSchema } = require('graphql-tools');
+const { makeExecutableSchema, addMockFunctionsToSchema } = require('graphql-tools');
 const { graphiqlExpress, graphqlExpress } = require('graphql-server-express');
 
 const config = require('./config');
@@ -15,6 +15,12 @@ const schema = makeExecutableSchema({
   typeDefs,
   resolvers
 });
+
+// addMockFunctionsToSchema({
+//   schema,
+//   mocks: {},
+//   preserveResolvers: true
+// });
 
 const app = express();
 
