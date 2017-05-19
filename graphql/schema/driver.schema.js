@@ -1,4 +1,4 @@
-const schema = `
+const Driver = `
   type Driver {
     _id: String
     name: String
@@ -17,4 +17,4 @@ const schema = `
   }
 `;
 
-module.exports = schema;
+module.exports = Driver;

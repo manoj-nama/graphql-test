@@ -25,6 +25,7 @@ const schema = makeExecutableSchema({
 const app = express();
 
 mongoose.connect(config.mongo_uri);
+mongoose.set('debug', true);
 
 app.use('/api', bodyParser.json(), graphqlExpress({ schema }));
 
